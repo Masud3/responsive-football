@@ -1,0 +1,130 @@
+/* -----------------------
+    responsive section 
+----------------------*/
+/* mobile device */
+@media only screen and (max-width:688px){
+    /* header responsive */
+    .header-container{
+        width: 100%;
+        padding: auto;
+    }
+    .nav-container{
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu ul li a{
+        width: 100%;
+    }
+
+    /* banner responsive */
+    .banner-container{
+        display: block;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .player-container{
+        display: flex;
+        justify-content: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* middle banner */
+    .middle-banner{
+        width: 100%;
+        display: block;
+        
+    }
+    .middle-banner-img{
+        width: 100%;
+        display: block;
+    }
+    .middle-banner-content{
+        display: block;
+        width:50%;
+        color: white;
+        margin: 20px 0;
+    }
+
+
+    /* latest blogs */
+    .blogs-container{
+        /* margin: 20px 100px; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* footer */
+    footer{
+        width: 50%;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+}
+
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    /* header responsive */
+    .header-container{
+        text-align: center;
+    }
+    .nav-container{
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu ul li a{
+        width: 100%;
+    }
+    /* banner responsive */
+    .banner-container{
+        display: block;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .player-container{
+        display: flex;
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* middle banner */
+    .middle-banner{
+        width: 100%;
+        display: block;
+        
+    }
+    .middle-banner-img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .middle-banner-content{
+        display: inline-block;
+        width: 80%;
+        margin: 20px 0;
+        color: white;
+        margin: auto;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer */
+    footer{
+        width: 80%;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+}

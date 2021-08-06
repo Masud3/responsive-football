@@ -1,0 +1,218 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------
+    header design starts 
+------------------------------*/
+.header-container{
+    background-color: #6c5ce7;
+    padding: 0 150px;
+}
+.header-container:hover .banner-content h1{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+  }
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu ul{
+    text-align: center;
+}
+.nav-menu ul li{
+    display: inline-block;
+    margin-right: 26px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: .4s;
+}
+.nav-menu ul li a:hover{
+    background-color: #a29bfe;
+}
+.nav-button a{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+/* -------------------------
+    banner design starts 
+-----------------------------*/
+.banner-container{
+    display: flex;
+}
+.banner-content h1{
+    width: 485px;
+    height: 230px;
+    padding-top: 100px;
+    margin-bottom: 27px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.text-color{
+    color: #fdcb6e;
+}
+.link-btn{
+    text-decoration: none;
+    background: #E02C6D;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 24px;
+}
+.banner-content a{
+    width: 168px;
+    height: 44px;
+    display: inline-block;
+    margin-top: 27px;
+    text-align: center;
+}
+.banner-img img{
+    width: 556.01px;
+    height: 438px;
+    padding-top: 56px;
+    margin-bottom: 80px;
+}
+
+/* -------------------------
+    players design starts 
+-----------------------------*/
+.player-container{
+    margin: 50px 100px;
+    background-color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.player{
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 5px;
+    transition: .4s;
+}
+.player:hover{
+    box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.15);
+}
+.player-img img{
+    width: 250px;
+    height: 200px;
+}
+.player-desc{
+    text-align: justify;
+}
+.player-desc p{
+    font-size: 12px;
+}
+
+
+/* ------------------------
+    middle banner design 
+---------------------------*/
+.middle-banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    
+}
+.middle-banner-img{
+    margin-right: -4px;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 18rem;
+}
+.middle-banner-img img{
+    width: 300px;
+    
+}
+.middle-banner-content{
+    width: 70%;
+    background-color: red;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+.middle-banner-content p{
+    margin-bottom: 30px;
+}
+
+
+/* latest blogs */
+.blogs-container{
+    /* margin: 20px 120px; */
+    margin: 50px 100px;
+    text-align: justify;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.blog{
+    display: flex;
+    padding: 10px;
+}
+.blog-logo img{
+    margin-right: 10px;
+    width: 200px;
+    height: 150px;
+}
+.blog-text{
+    width: 400px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* footer design styles */
+footer{
+    width: 483.87px;
+    height: 213px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+.social-icon img{
+    width: 32px;
+    height: 32px;
+    margin: 20px 7px;
+}
+footer p{
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+
+
