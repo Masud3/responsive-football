@@ -13,6 +13,7 @@
 .header-container{
     background-color: #6c5ce7;
     padding: 0 150px;
+    margin: 0 auto;
 }
 .header-container:hover .banner-content h1{
     display: inline-block;
@@ -131,7 +132,10 @@
 .middle-banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 120px;
+    margin: 0 100px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
     
 }
 .middle-banner-img{
@@ -160,30 +164,47 @@
 
 /* latest blogs */
 .blogs-container{
-    /* margin: 20px 120px; */
     margin: 50px 100px;
     text-align: justify;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
 }
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    padding: 5px;
 }
 .blog{
     display: flex;
     padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: .4s;
+}
+.blog:hover{
+    box-shadow: 4px 8px 30px rgba(0, 0, 0, 0.15);
 }
 .blog-logo img{
     margin-right: 10px;
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 130px;
 }
 .blog-text{
-    width: 400px;
+    width: 340px;
     font-size: 15px;
     font-weight: 500;
-    height: 200px;
+    height: 130px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+}
+.blog-text h2{
+    font-size: 15px;
 }
 
 /* footer design styles */
@@ -213,6 +234,147 @@ footer p{
     text-align: center;
     font-size: 12px;
     color: #000;
+}
+
+
+
+
+/* -----------------------
+    responsive section 
+----------------------*/
+/* mobile device */
+@media only screen and (max-width:688px){
+    /* header responsive */
+    .header-container{
+        width: 100%;
+        padding: auto;
+    }
+    .nav-container{
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu ul li a{
+        width: 100%;
+    }
+
+    /* banner responsive */
+    .banner-container{
+        display: block;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .player-container{
+        display: flex;
+        justify-content: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* middle banner */
+    .middle-banner{
+        width: 70%;
+        display: block;
+    }
+    .middle-banner-img{
+        width: 100%;
+        display: block;
+    }
+    .middle-banner-content{
+        display: block;
+        width:100%;
+        color: white;
+        margin: 20px 0;
+    }
+
+    
+
+    /* latest blogs */
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-logo img, .blog-text{
+        width: 100%;
+    }
+    /* footer */
+    footer{
+        width: 50%;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+}
+
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    /* header responsive */
+    .header-container{
+        text-align: center;
+    }
+    .nav-container{
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu ul li a{
+        width: 100%;
+    }
+    /* banner responsive */
+    .banner-container{
+        display: block;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .player-container{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* middle banner */
+    .middle-banner{
+        width: 80%;
+        display: flex;
+        
+    }
+    .middle-banner-img{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .middle-banner-content{
+        display: inline-block;
+        width: 80%;
+        margin: 20px 0;
+        color: white;
+        margin: auto;
+    }
+    /* latest blogs */
+    .blog{
+        display: flex;
+        flex-direction: row;
+    }
+    .blog-logo img, .blog-text{
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer */
+    footer{
+        width: 80%;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
 }
 
 
